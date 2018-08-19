@@ -1,5 +1,6 @@
 #!/bin/bash
 set +eux
+sudo apt-get install -y git
 git clone git://github.com/yyuu/pyenv.git ${HOME}/.pyenv
 cat << EOF >> ${HOME}/.profile
 export PYENV_ROOT=\${HOME}/.pyenv
@@ -13,4 +14,5 @@ sudo apt-get install -y \
     libreadline7 \
     libreadline-dev \
     libsqlite3-dev \
-    libssl-dev
+    libssl-dev \
+    build-essential
